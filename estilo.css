@@ -1,5 +1,5 @@
 /* importamos la fuente */
-@import url('https://fonts.googleapis.com/css2? family= M+PLUS+Rounded+1c:wght@400;800 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,12 +10,19 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:#f6fafc;
+    background-color: #f6fafc;
 }
-/* SECCION INICIO*/
+
+/* SECCION I N I C I O */
 .inicio{
-    background:linear-gradient(to right, #000c67,#007be5);
-    clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 66%, 0 0);    margin: auto;
+    background:linear-gradient(to right, #000c67, #007be5);
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
+    height: 90vh;
+    padding:  0 20px;
+}
+.inicio .contenido{
+    max-width: 1100px;
+    margin: auto;
     color: #fff;
 }
 .inicio header{
@@ -43,7 +50,7 @@ body{
     border: 2px solid transparent;
 }
 #inicio header nav a:hover{
-    border-bottom:  2px solid #ff5b00;
+    border-bottom: 2px solid #ff5b00;
 }
 .inicio .redes a{
     text-decoration: none;
@@ -64,7 +71,7 @@ body{
 }
 .inicio .fila .col h2{
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 30px;
 }
 .inicio .fila .col p{
     margin-bottom: 20px;
@@ -83,21 +90,12 @@ body{
     padding: 5px 40px;
     border: 2px solid #ff5b00;
     color: #fff;
-    background: linear-gradient(to right, #ff5b00, #ff9900);
+    background:linear-gradient(to right, #ff5b00, #ff9900);
     transition: .5s;
     cursor: pointer;
 }
 .inicio .fila .col button:hover{
     transform: scale(1.1);
-}
-#icono nav{
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    transition: .3s;
-    cursor: pointer;
 }
 #icono-nav{
     height: 30px;
@@ -111,12 +109,11 @@ body{
 }
 #icono-nav:hover{
     background-color: #3e3e3e;
-
 }
 .sombra{
     filter:drop-shadow(0em 30px 20px #9bd2f4);
 }
-/* SECCION SERVICIOS*/
+/* SECCION S E R V I C I O S */
 .servicios{
     max-width: 1100px;
     margin: auto;
@@ -132,7 +129,7 @@ body{
 }
 .servicios .fila .col{
     text-align: center;
-    width: 30px;
+    width: 30%;
 }
 .servicios .fila .col .card{
     border: 1px solid #8d8d8d;
@@ -143,8 +140,9 @@ body{
     position: relative;
 }
 .servicios .icono{
-    width: 90%;
-    height: 90%;
+    width: 70px;
+    height: 70px;
+    margin: auto;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -163,7 +161,7 @@ body{
     font-size: 20px;
 }
 .color1{
-    background: linear-gradient(#ff9900,#ff5b00);
+    background: linear-gradient(#ff9900, #ff5b00);
 }
 .color2{
     background: linear-gradient(#038aee, #0039a9);
@@ -187,9 +185,9 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
-/* seccion HABILIDADES*/
+/* seccion HABILIDADES */
 .habilidades{
-    background: linear-gradient(to right, #000c76, #007be5);
+    background:linear-gradient(to right, #000c76, #007be5);
     color: #fff;
     padding: 60px 0;
     position: relative;
@@ -198,7 +196,7 @@ body{
 .habilidades h2{
     text-align: center;
 }
-.habilidades .contenedor-hab{
+.habilidades .contenedor-habi{
     max-width: 1100px;
     margin: auto;
 }
@@ -226,13 +224,14 @@ body{
     font-size: 40px;
     text-align: center;
 }
-/* Esta clase se genera dinámicamente por la librería para gráficos */
+
+/* Esta clase se genera dinámicamente por la librera para graficos */
 .score .box canvas{
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
 }
-/* SECCION TRABAJOS*/
+/* SECCION T R A B A J O S */
 .trabajos{
     max-width: 1100px;
     margin: auto;
@@ -257,9 +256,9 @@ body{
 .trabajos nav a:hover{
     border: 3px solid #ff5b00;
 }
-/* Esta clase se agregará dinámicamente cuando haya seleccionado una opción */
-.border{
-    border: 3px solid #ff5b00 !important;
+/* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
+.borde{
+    border: 3px solid #ff5b00 !important;  
 }
 .trabajos .galeria .item img{
     width: 100%;
@@ -269,12 +268,12 @@ body{
 .trabajos .galeria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    grid-gap: 30px;
+    grid-gap:30px;
 }
 .trabajos .galeria .item{
     position: relative;
     overflow: hidden;
-    border: 1px solid #8d8d8d;
+    border: 1px solid #8d8d8d ;
     border-radius: 10px;
 }
 .trabajos .galeria .item .info{
@@ -283,18 +282,22 @@ body{
     left: 0;
     bottom: 0;
     text-align: center;
-    background-color: #fff;
+    background-color:#fff ;
     width: 100%;
     padding: 20px;
     opacity: 0;
     transition: .3s;
+}
+.trabajos .galeria .item .info h3{
+    color: #000;
+    margin-bottom: 20px;
 }
 .trabajos .galeria .item .info span{
     color: #8d8d8d;
     display: inline-block;
     border: 2px solid #8d8d8d;
     margin: 0 3px;
-    padding: 0 5px;
+    padding:  0 5px;
 }
 .trabajos .galeria .item .info a{
     display: block;
@@ -307,10 +310,10 @@ body{
     opacity: 1;
     top: 0;
 }
-/* SECCION CONTACTO*/
+/* SECCIÓN C O N T A C T O */
 .contacto{
-    background: 
-        linear-gradient(rgba(0,12,103,1), rgba(0,12,103, .8)),
+    background:
+        linear-gradient(rgba(0,12,103,1), rgba(0,12,103,.8)),
         url(img/foto-contacto.png);
         background-size: cover;
         color: #fff;
@@ -344,7 +347,7 @@ body{
     border: none;
     background-color: transparent;
     padding: 10px;
-    border: 1px solid #8d8d8d;
+    border: 1px solid #8d8d8d ;
     margin-bottom: 20px;
     outline: none;
     color: #ff5b00;
@@ -357,6 +360,7 @@ body{
     cursor: pointer;
     background: linear-gradient(to right, #ff5b00, #ff9900);
 }
+
 footer{
     background-color: #000;
     color: #fff;
@@ -364,7 +368,8 @@ footer{
     font-size: 14px;
     text-align: center;
 }
-/*SECCION RESPONSIVE*/
+
+/* SECCION RESPONSIVE */
 @media screen and (max-width:1180px){
     .inicio{
         clip-path: none;
@@ -378,7 +383,7 @@ footer{
         display: none;
     }
     #nav.responsive{
-        background-color: rgba(0, 0, 0, .9);
+        background-color: rgba(0,0,0,.9);
         top: 0;
         left: 0;
         height: 100vh;
@@ -397,6 +402,7 @@ footer{
     #icono-nav{
         display: block;
     }
+
     .inicio{
         height: auto;
     }
@@ -414,6 +420,7 @@ footer{
         width: 50%;
         margin-top: 30px;
     }
+
     .servicios{
         position: static;
         padding: 20px;
@@ -432,11 +439,13 @@ footer{
     .habilidades{
         position: static;
     }
+
     .trabajos nav a{
         margin: 0 5px;
     }
+
     .contacto .fila{
-        display: block !important;
+        display:  block !important;
     }
     .contacto .fila .col{
         text-align: center;
@@ -447,6 +456,4 @@ footer{
         font-size: 12px;
         width: 25%;
     }
-    
 }
-

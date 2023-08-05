@@ -1,83 +1,344 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="estilo.css">
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <!--Sección INICIO-->
-        <span class="sombra">
-            <section id="inicio" class="inicio">
-                <div class="contenido">
-                    <header>
-                        <div class="logo">
-                            <i class="fa-brands fa-codepen"></i>
-                            <h1>Miguel Robles</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Porfolio</title>
+</head>
+<body>
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                        <h1>Miguel Angel</h1>
+                    </div>
+                    <nav id="nav" class="">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#trabajos">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+    
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>Técnico en Sistemas y Desarrollador de Aplicaciones Multiplataforma</h2>
+                        <p>¡Hola! Soy un Técnico en Sistemas Microinformáticos y Redes, estudiante de Desarrollo de Aplicaciones Multiplataforma. Apasionado por la tecnología y la resolución de problemas.  Mi objetivo es crear soluciones tecnológicas eficientes y versátiles que marquen la diferencia. ¡Bienvenido a mi portfolio!</p>
+                        <button class="btn btn-1">
+                            <a href="Curriculum Miguel Angel.pdf" download="Curriculum Miguel Angel.pdf">Descargar CV</a>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="imagen/foto-inicio.png" alt="">
                         </div>
-                        <nav id="nav">
-                            <a href="#inicio">Inicio</a>
-                            <a href="#servicios">Servicios</a>
-                            <a href="#habilidades">Habilidades</a>
-                            <a href="#trabajos">Trabajos</a>
-                            <a href="#contacto">Contacto</a> 
-                        </nav>
-
-                        <!--Icono del menú responsive-->
-                        <div id="icono-nav" onclick="responsiveMenu()">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-
-                        <div class="redes">
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a> 
-                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </header>
-                    <div class="fila">
-                        <div class="col">
-                            <h2>Desarrollador Fullstack</h2>
-                            <p>Estudiante de desarrollo web en busca de experiencia. Apasionado por el diseño y la programación, buscando oportunidades para contribuir en proyectos web innovadores.</p>
-                            <button class="btn btn-1">Descargar CV</button>
-                        </div>
-                        <div class="col">
-                            <div class="contenedor-img">
-                                <img src="foto-inicio.png" alt="">
-                            </div>   
-                        </div>
-
                     </div>
                 </div>
-            </section>
-        <!--sección SERVICIO-->
-        <section id="Servicios" class="Servicios">
-            <div class="fila">
-                <div class="col">
-                    <div class="card">
-                        <div class="icono color1">
-                            <div class="circulo">
-                                <i class="fa-solid fa-code"></i>
-                            </div>
-                        </div>
-                        <h3>Diseño Web</h3>
-                        <p>Convierte tu pasión por el diseño web en una poderosa herramienta para transformar ideas en experiencias digitales excepcionales</p>
+            </div>
+        </section>
+    </span>
 
-                        <a href="#">Leer Más</a>
+    <!-- sección SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
                     </div>
+                    <h3>Diseño Web</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
                 </div>
-                <div class="col">
-                    <div class="card">
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
                         <div class="circulo">
                             <i class="fa-solid fa-palette"></i>
                         </div>
                     </div>
                     <h3>Diseño Gráfico</h3>
-                    <p>Convierte tu pasión por el diseño Gráfico en una poderosa herramienta para transformar ideas en experiencias digitales excepcionales</p>
-                </div> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
             </div>
-        </section>
-    
-    </body>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                    </div>
+                    <h3>Animaciones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                    </div>
+                    <h3>Domótica</h3>
+                    <p> Instalación de dispositivos y sistemas conectados, IoT.
+                    Mantenimiento de dispositivos y sistemas conectados, IoT</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                    </div>
+                    <h3>Soporte Clientes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <h3>Tiendas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta inventore neque ducimus cupiditate, placeat incidunt culpa quis quod distinctio.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección habilidades -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenedor-habi">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="70">
+                                70%
+                            </div>
+                            <h2>HTML & CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="60">
+                                60%
+                            </div>
+                            <h2>BOOSTRAP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="65">
+                            65%
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="70">
+                                70%
+                            </div>
+                            <h2>MYSQL</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="60">
+                                60%
+                            </div>
+                            <h2>PHP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="80">
+                                80%
+                            </div>
+                            <h2>DOMOTICA</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección trabajos -->
+    <section class="trabajos" id="trabajos">
+        <h2>Mis Trabajos</h2>
+
+        <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
+            <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
+            <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('animaciones')">Animaciones</a>
+        </nav>
+
+        <div class="galeria">
+            <div class="item disenio">
+                <img src="imagen/trabajo1.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="imagen/trabajo2.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="imagen/trabajo3.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="imagen/trabajo4.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="imagen/trabajo5.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="imagen/trabajo6.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="imagen/trabajo7.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="imagen/trabajo8.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="imagen/trabajo9.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>miguelrobles29@hotmail.es</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>606386577</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>España</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ciudad:</h3>
+                        <p>El Ejido (Almeria)</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Creado por Código Web - 2023 - Aprende Creando</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
 </html>
